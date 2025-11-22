@@ -17,5 +17,6 @@ namespace Rus_Andreea_lab2.Data
         public DbSet<Rus_Andreea_lab2.Models.Book> Book { get; set; } = default!;
         public DbSet<Rus_Andreea_lab2.Models.Publisher> Publisher { get; set; } = default!;
         public DbSet<Rus_Andreea_lab2.Models.Author> Author { get; set; } = default!;
+        public DbSet<Rus_Andreea_lab2.Models.Category> Category { get; set; } = default!;
     }
 }
