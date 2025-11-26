@@ -8,10 +8,16 @@ namespace Rus_Andreea_lab2.Models
     {
         public int ID { get; set; }
 
+        [Required(ErrorMessage = "Titlul este obligatoriu.")]
+        [StringLength(150, MinimumLength = 3,
+        ErrorMessage = "Titlul trebuie să aibă între 3 și 150 de caractere.")]
         [Display(Name = "Book Title")]
         public string Title { get; set; }
 
+
         [Column(TypeName = "decimal(6, 2)")]
+        [Range(0.01, 500)]
+
         public decimal Price { get; set; }
 
         [DataType(DataType.Date)]
